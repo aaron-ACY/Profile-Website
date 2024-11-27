@@ -1,0 +1,177 @@
+/* cơ bản */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: url("https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/329048013_503261871992852_7053074181170703933_n.png?stp=dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeGbtY7QRs4N4Y2TWpZEnFWuUq6J39MmCkdSronf0yYKR-UD9A_ppjAivOb_UmFG-8iMvtMchmNK3bl-wnNnj2QP&_nc_ohc=tHiE1m1grsoQ7kNvgHPqaNN&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&_nc_gid=AlwD9X1zEBpAeiLYoeWzihX&oh=00_AYD9GUjroyvj_D4bULJb76XJCs0nTi5EfgBpjmIVfRftKQ&oe=674D083D");
+  color: white;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+}
+header .overlay {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+header .menu {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+}
+header .menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+header .menu li a:hover {
+  background: #00bcd4;
+  color: black;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  background: white;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007acc;
+}
+.skills {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.skills li {
+  padding: 10px 20px;
+  background: #007acc;
+  color: white;
+  border-radius: 5px;
+}
+.skills li:hover {
+  background-color: #005f99;
+}
+.project {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border-left: 5px solid #007acc;
+}
+.project:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.project a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Contact form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin: 10px 0 5px;
+  color: #555;
+}
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+form input:focus,
+form textarea:focus {
+  border-color: #007acc;
+  outline: none;
+}
+form button {
+  background: #007acc;
+  color: white;
+  border: none;
+}
+form button:hover {
+  background: #005f99;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center; /* Căn giữa các liên kết */
+  gap: 20px; /* Khoảng cách giữa các liên kết */
+}
+
+.social-links a {
+  display: flex;
+  align-items: center; /* Căn chỉnh ảnh và văn bản theo chiều dọc */
+  text-decoration: none; /* Xóa gạch chân */
+  color: #007acc;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #005f99;
+}
+.social-links img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Khoảng cách giữa ảnh và chữ */
+}
+
+.social-links a:hover img {
+  transform: scale(1.1); /* Tăng kích thước ảnh khi hover */
+  transition: transform 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #007acc;
+  color: white;
+}

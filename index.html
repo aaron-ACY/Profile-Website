@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Trang chính -->
+    <header id="home">
+      <div class="overlay">
+        <h1>Xin chào, tôi là Đàn</h1>
+        <p>Một lập trình viên yêu thích sáng tạo và khám phá công nghệ.</p>
+        <nav>
+          <ul class="menu">
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#projects">Dự án</a></li>
+            <li><a href="#resume">CV & Kinh nghiệm</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Giới thiệu -->
+    <section id="about">
+      <h2>Giới thiệu bản thân</h2>
+      <p>
+        Tôi là một lập trình viên với niềm đam mê tạo ra các sản phẩm công nghệ
+        hữu ích. Với kinh nghiệm trong HTML, CSS, JavaScript, tôi luôn sẵn sàng
+        học hỏi và đối mặt với thách thức.
+      </p>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>Css</li>
+        <li>Js</li>
+      </ul>
+    </section>
+
+    <!-- Dự án -->
+    <section id="projects">
+      <h2>Dự án</h2>
+      <div class="project">
+        <h3>Dự án 1: Website Shoppe</h3>
+        <p>Một website đơn giản giúp quản lý sản phẩm và đơn hàng.</p>
+        <a href="https://aaron-acy.github.io/demo/">Xem chi tiết</a>
+      </div>
+    </section>
+
+    <!-- tóm tắt -->
+    <section id="resume">
+      <h2>CV & Kinh nghiệm</h2>
+      <p><a href="CV.pdf" download>Tải CV (PDF)</a></p>
+      <ul class="timeline">
+        <li><strong>2024:</strong> Học tại cao đẳng BTEC FPT</li>
+        <li><strong>2026:</strong> Thực tập tại công ty Rikai.</li>
+      </ul>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="contact">
+      <h2>Liên hệ</h2>
+      <form action="#" method="post">
+        <label for="name">Họ tên:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Tin nhắn:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Gửi</button>
+      </form>
+      <div class="social-links">
+        <a href="https://github.com/aaron-ACY">
+          <img src="https://img.icons8.com/?size=100&id=XASA7fMaH2Oc&format=png&color=000000  " alt="GitHub" /> GitHub
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61553783387180">
+          <img src="https://img.icons8.com/?size=100&id=frnVBVEptgMt&format=png&color=000000" alt="Facebook" /> Facebook
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 by ACY. Tất cả quyền được bảo lưu.</p>
+    </footer>
+  </body>
+</html>
