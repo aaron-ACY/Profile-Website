@@ -1,4 +1,4 @@
-/* cơ bản */
+/* Cơ bản */
 body,
 h1,
 h2,
@@ -20,12 +20,58 @@ body {
 
 /* Header */
 header {
-  background: url("https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/329048013_503261871992852_7053074181170703933_n.png?stp=dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeGbtY7QRs4N4Y2TWpZEnFWuUq6J39MmCkdSronf0yYKR-UD9A_ppjAivOb_UmFG-8iMvtMchmNK3bl-wnNnj2QP&_nc_ohc=tHiE1m1grsoQ7kNvgHPqaNN&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&_nc_gid=AlwD9X1zEBpAeiLYoeWzihX&oh=00_AYD9GUjroyvj_D4bULJb76XJCs0nTi5EfgBpjmIVfRftKQ&oe=674D083D");
+  background: url("https://phongvu.vn/cong-nghe/wp-content/uploads/2020/11/119234579_169457918065236_755533166268046471_n-1.jpg")
+    no-repeat center center;
+  background-size: cover;
   color: white;
   text-align: center;
   height: 100vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.header-content {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.login {
+  background-color: #4caf50;
+}
+
+.logout {
+  background-color: #f44336;
+}
+
+/* Phần overlay */
 header .overlay {
   height: 100%;
   padding: 20px;
@@ -63,7 +109,7 @@ header .menu li a:hover {
 section {
   padding: 40px 20px;
   background: white;
-  margin: 20px 0;
+  margin: 40px 0; /* Tạo khoảng cách giữa các phần */
   border-radius: 10px;
 }
 h2 {
@@ -141,14 +187,14 @@ form button:hover {
 /* Social Links */
 .social-links {
   display: flex;
-  justify-content: center; /* Căn giữa các liên kết */
-  gap: 20px; /* Khoảng cách giữa các liên kết */
+  justify-content: center;
+  gap: 20px;
 }
 
 .social-links a {
   display: flex;
-  align-items: center; /* Căn chỉnh ảnh và văn bản theo chiều dọc */
-  text-decoration: none; /* Xóa gạch chân */
+  align-items: center;
+  text-decoration: none;
   color: #007acc;
   font-size: 1.2em;
   transition: color 0.3s ease;
@@ -157,15 +203,16 @@ form button:hover {
 .social-links a:hover {
   color: #005f99;
 }
+
 .social-links img {
   width: 30px;
   height: 30px;
-  margin-right: 10px; /* Khoảng cách giữa ảnh và chữ */
+  margin-right: 10px;
 }
 
 .social-links a:hover img {
-  transform: scale(1.1); /* Tăng kích thước ảnh khi hover */
-  transition: transform 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 /* Footer */
